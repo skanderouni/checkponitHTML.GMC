@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+/* initialisation */
+* {
+  margin: 0%;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+/* header */
+
+/* ----------------------------------------------------------------------- */
+/* main */
+/* introduction section */
+.logo-docplanner{
+  height: 50px;
+}
+.main_nav{
+  float: right;
+}
+.introduction {
+  /*1 Box Model */
+  margin: 2% 10%;
+  /*2 flexBox */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; => didnt work cause we changed the default axis*/
+  align-items: center;
+}
+.introduction h1 {
+  font-size: 2.125rem;
+  color: #00b39b;
+  margin: 3%;
+}
+.introduction div {
+  display: flex;
+  justify-content: space-around;
+}
+.introduction div p {
+  width: 45%;
+  line-height: 1.5;
+}
+
+/* ---------------------------------------------- */
+/* countries section */
+.countries {
+  /* Box Model */
+  margin: 2% 10%;
+  /* flexBox */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.country {
+  margin-bottom: 2%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+/* .country img {
+  border-radius: 8px;
+} */
+.country div {
+  /* Position */
+  display: flex;
+  justify-content: space-between;
+  /* Box model */
+  padding: 4%;
+}
+.country:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
